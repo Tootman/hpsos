@@ -1,0 +1,768 @@
+/* Welcome and glad you are using Reverie.
+ * This is the main stylesheet loaded by default.
+ * Edit the file and have fun.
+ * http://themefortress.com/reverie */
+/* Start to customize Reverie */
+a, a:visited, a:hover, a:visited:hover {
+  -moz-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+figure {
+  margin: 0 auto 1.25rem;
+}
+
+figure img {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin: 18px auto;
+}
+
+.gallery dt, .gallery dl {
+  display: inline-block;
+}
+.gallery dl {
+  margin-left: 0.5625rem;
+  margin-right: 0.5625rem;
+}
+
+figure.figure {
+  margin: 0 auto;
+  display: table;
+}
+figure.figure figcaption {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-style: italic;
+  padding: 8px 10px;
+  color: #999;
+  margin-bottom: 1.25rem;
+  display: table-caption;
+  caption-side: bottom;
+}
+
+figure.alignright.figure {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+figure.alignleft.figure {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+.footer-widget {
+  background-color: #eee;
+}
+
+body > header.contain-to-grid {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  padding-bottom: 0;
+}
+
+#content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.index-card {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+span.author,
+time {
+  font-size: 0.9375rem;
+  color: #999;
+}
+span.author a,
+time a {
+  color: #999;
+  font-weight: bold;
+}
+span.author a:hover, span.author a:focus,
+time a:hover,
+time a:focus {
+  color: #444;
+}
+
+.entry-author {
+  background-color: #fbfbfb;
+  border: none;
+  padding: 3.125rem 5rem;
+  margin: 3.125rem -0.9375rem;
+}
+.entry-author .avatar {
+  margin-right: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.entry-author h4 a {
+  color: #999;
+}
+.entry-author h4 a:hover, .entry-author h4 a:focus {
+  color: #444;
+}
+.entry-author p {
+  color: #bbb;
+}
+
+.post header,
+.page header {
+  margin-bottom: 1.25rem;
+}
+
+.entry-tags {
+  color: #999;
+  font-size: 0.9375rem;
+}
+.entry-tags a {
+  color: #999;
+}
+.entry-tags a:hover, .entry-tags a:focus {
+  color: #444;
+}
+
+.page-numbers {
+  color: #999;
+  display: block;
+  min-height: 1.5rem;
+  margin-left: -0.3125rem;
+}
+.page-numbers li {
+  height: 1.5rem;
+  color: #222;
+  font-size: 0.875rem;
+  margin-left: 0.3125rem;
+}
+.page-numbers li a {
+  display: block;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+  color: #999;
+  border-radius: 3px;
+}
+.page-numbers li:hover a,
+.page-numbers li a:focus {
+  background: #e6e6e6;
+}
+.page-numbers li.unavailable a {
+  cursor: default;
+  color: #999;
+}
+.page-numbers li.unavailable:hover a, .page-numbers li.unavailable a:focus {
+  background: transparent;
+}
+.page-numbers li.current a {
+  background: #008CBA;
+  color: #fff;
+  font-weight: bold;
+  cursor: default;
+}
+.page-numbers li.current a:hover, .page-numbers li.current a:focus {
+  background: #008CBA;
+}
+.page-numbers li {
+  float: left;
+  display: block;
+}
+
+.pagination-centered ul.page-numbers li {
+  float: none;
+  display: inline-block;
+}
+
+.page-numbers li span.current {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.page-numbers li {
+  margin-left: 0.5rem;
+}
+
+.page-numbers li span:hover a,
+.page-numbers li span a:focus {
+  background: #e6e6e6;
+}
+.page-numbers li span.current {
+  background: #008CBA;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: default;
+}
+
+.avatar {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+
+ol.commentlist {
+  margin-left: 0;
+  margin-top: 2em;
+}
+ol.commentlist p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+ol.commentlist ul.children {
+  margin-left: 4rem;
+}
+ol.commentlist li {
+  list-style: none;
+  margin-bottom: 2em;
+}
+ol.commentlist li .comment-author img {
+  float: left;
+  margin: 0 1em 0 0;
+}
+ol.commentlist li .author-meta {
+  display: inline-block;
+}
+ol.commentlist li .author-meta cite.fn {
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+ol.commentlist li .author-meta time a {
+  color: #ccc;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+ol.commentlist li .author-meta .comment-edit-link {
+  color: #bbb;
+  font-size: 0.875rem;
+}
+ol.commentlist li section.comment {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+ol.commentlist li section.comment a.comment-reply-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #bbb;
+}
+ol.commentlist li section.comment a.comment-reply-link:hover, ol.commentlist li section.comment a.comment-reply-link:focus {
+  color: #444;
+}
+
+#sidebar {
+  margin-top: 1.25rem;
+}
+
+#sidebar .panel, .footer-widget .panel {
+  border: none;
+  background-color: #eee;
+  padding: 1.5rem 1.875rem;
+}
+#sidebar .panel a, .footer-widget .panel a {
+  color: #999;
+  font-size: 0.9375rem;
+}
+#sidebar .panel a:hover, #sidebar .panel a:focus, .footer-widget .panel a:hover, .footer-widget .panel a:focus {
+  color: #444;
+}
+#sidebar ul, .footer-widget ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+#sidebar .widget h4, .footer-widget .widget h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  color: #888;
+  font-weight: 600;
+}
+
+footer.full-width {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding-top: 3rem;
+}
+footer.full-width p {
+  font-size: 0.875rem;
+}
+footer.full-width a {
+  color: #666;
+  font-size: 0.9375rem;
+}
+footer.full-width a:hover, footer.full-width a:focus {
+  color: #444;
+}
+footer.full-width .love-reverie {
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem;
+}
+
+.admin-bar > .fixed {
+  margin-top: 2rem;
+}
+
+.f-topbar-fixed > .container {
+  margin-top: 2rem;
+}
+
+@media only screen {
+  .entry-author .avatar {
+    margin-bottom: 1.25rem;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  #content {
+    padding: 3.125rem;
+  }
+
+  .entry-author {
+    margin: 3.125rem -3.125rem;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  #sidebar {
+    padding-left: 1.875rem;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .footer-widget {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+}
+/* was #008CBA; */
+#home-banner-head,
+nav.top-bar {
+  background-color: #2A8055;
+}
+
+#home-banner-head {
+  border-bottom-width: 1em;
+  border-bottom-style: solid;
+  border-bottom-color: #2A8055;
+}
+
+body > header.contain-to-grid {
+  margin-bottom: 0px;
+  background-color: #2A8055;
+}
+
+/* --------------------------------------- footer -------------------- */
+footer.full-width {
+  background-color: #2A8055;
+}
+
+footer .widget,
+footer .panel,
+footer .textwidget {
+  background: #2A8055;
+  color: white;
+  border: none;
+}
+
+footer h2,
+footer h3,
+footer h4,
+footer p {
+  color: white;
+}
+
+footer hr {
+  border-top-color: #53AF81;
+}
+
+#contact-footer .panel {
+  border-right: solid;
+  border-right-width: 1px;
+  border-color: #53AF81;
+}
+
+footer a img {
+  border: none;
+  margin: 0.5em;
+  background-color: white;
+  padding: 0.5em;
+}
+
+/* ------------------------- top bar ------------------------------*/
+.top-bar.menu-item {
+  background-color: #2A8055;
+}
+
+.top-bar-section li a:not(.button) {
+  background: #2A8055 !important;
+}
+
+.top-bar-section li a:not(.button):hover {
+  background: #53AF81 !important;
+}
+
+.top-bar-section ul li.active > a {
+  background: #53AF81 !important;
+}
+
+/* menu seperators */
+@media only screen and (min-width: 40.063em) {
+  .divider {
+    border: none !important;
+  }
+}
+h1, h2, h3, h4 {
+  font-family: Kalam,sans-serif;
+}
+
+img.custom-logo {
+  width: 11em;
+  position: relative;
+  top: 2em;
+  z-index: 2;
+}
+
+/* ------------------------fontawsome ----------------------------------------------------------- */
+@font-face {
+  font-family: '[set]Foundicons';
+  src: url("fonts/[set]_foundicons.eot");
+  src: url("fonts/[set]_foundicons.eot?#iefix") format("embedded-opentype"), url("fonts/[set]_foundicons.woff") format("woff"), url("fonts/[set]_foundicons.ttf") format("truetype"), url("fonts/[set]_foundicons.svg#[set]Foundicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "[set]Foundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* ------------------------------------------ */
+#search-section {
+  margin-top: 3em;
+}
+
+a#header-search-button {
+  padding: 0.48em;
+  background-color: #998771;
+}
+
+#social-section a {
+  font-size: 3em;
+  color: white;
+  margin-right: 0.2em;
+}
+
+#social-section {
+  padding-top: 0.9em;
+}
+
+input#searchsubmit {
+  background-color: #53AF81;
+}
+
+/*  ------------------ simple jobs board plugin --------------- */
+/*
+.sjb-row{
+  padding-left:1em;
+  background-color:$theme-green;
+  border-left-style:solid;
+  border-left-width:0.5em;
+  border-left-color:$highlight-green;
+}
+*/
+article#sjb_job-visiable {
+  padding-left: 1em;
+  background-color: #998771;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #53AF81;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.sjb-wrap #sjb_job-heading,
+.sjb-wrap #sjb-job-heading {
+  color: white !important;
+  font-size: 1.5em !important;
+}
+
+.panel {
+  background: white;
+  text-align: center;
+  border-style: none;
+}
+
+.welcome-section,
+.welcome-section .panel {
+  background-color: #d5f1c1;
+}
+
+.activities-grid .panel {
+  /*
+  padding-left:0px;
+  padding-right:0px;
+  height: 25em;*/
+}
+
+.activities-grid .panel img {
+  max-height: 15em;
+}
+
+.grid-card-container#content {
+  background-color: #f0f0f0;
+}
+
+.activities-grid .panel:hover,
+.announcements-section .panel:hover {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.news-section h2, .news-section h3, .news-section h4 {
+  text-align: left;
+  margin-bottom: 0.1em;
+}
+
+.news-posted-date {
+  text-align: left;
+  color: #998771;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.news-section img {
+  margin-top: 1em;
+}
+
+#content.news-container {
+  background-color: #f0f0f0;
+}
+
+.button.small {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+footer .panel img {
+  margin-bottom: 0.5em;
+}
+
+footer .fa.fa-twitter-square,
+footer .fa.fa-facebook-official {
+  color: white;
+  padding: 0.2em;
+}
+
+footer .fa.fa-twitter-square:hover,
+footer .fa.fa-facebook-official:hover,
+footer.full-width a:hover {
+  color: #efef94;
+}
+
+.footer-email a {
+  text-decoration: none;
+}
+
+footer.full-width {
+  padding-top: 0px;
+}
+
+footer.full-width a {
+  color: white;
+  margin-top: 1em;
+}
+
+footer.full-width a:hover {
+  font-weight: bolder;
+}
+
+.full-width.footer-widget {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#contact-footer .widget {
+  text-align: left;
+}
+
+.footer-subheading {
+  font-size: 1.5em;
+}
+
+footer .textwidget h4, footer .textwidget h3, footer .textwidget p {
+  color: white;
+}
+
+footer h4, footer h3 {
+  text-align: center;
+}
+
+/* hide comments closed  - workaround */
+.notice {
+  display: none;
+}
+
+#sidebar .panel h4 {
+  color: #2B5974;
+}
+
+/* grid item card display - occurance field */
+.mycard-occurance {
+  margin-bottom: 0.5em;
+  color: white;
+  background-color: #6c376c;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.mycard-button {
+  margin-top: 0.6em;
+}
+
+.mycard-image:hover {
+  opacity: 0.8;
+}
+
+.header-contact-phone {
+  color: white;
+}
+
+/* ----------------------- font sizes ------------------ */
+.top-bar-section ul li > a {
+  font-size: 1em;
+}
+
+.container p,
+.container li {
+  font-size: 1.1em;
+}
+
+.container li {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  background-color: #f0f0f0;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+cite {
+  font-style: italic;
+  float: right;
+}
+
+.sjb-wrap #sjb_job-bolits {
+  color: red !important;
+}
+
+.widget_sp_image-description {
+  font-size: 0.7em;
+}
+
+.welcome-section h2,
+.welcome-section h3 {
+  text-align: left;
+}
+
+.panel a h1, .panel a h2, .panel a h3, .panel a h4 {
+  color: #0086b3;
+}
+
+/* ------------------------------------------- side bar ----------------------- */
+#sidebar .panel {
+  background-color: #2A8055;
+}
+
+#sidebar .panel a {
+  color: white;
+}
+
+#sidebar .panel a:hover {
+  color: white;
+}
+
+.panel {
+  padding-bottom: 0px;
+}
+
+.entry-content .panel,
+#content .panel {
+  border-radius: 1em;
+}
+
+#sidebar .panel li:hover {
+  background-color: #53AF81;
+}
+
+#sidebar .panel li:active {
+  background-color: #53AF81;
+  color: white;
+}
+
+#sidebar .panel h4 {
+  color: white;
+  font-weight: normal;
+  font-size: larger;
+}
+
+.textwidget li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 40.063em) {
+  .container .medium-block-grid-3 li {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  #sidebar {
+    margin-top: 1em;
+  }
+}
+article .author,
+article time.updated {
+  display: none;
+}
+
+.eo-tc-event .eo-event-date {
+  background-color: #6c376c;
+  padding: 0.5em;
+}
+
+.eo-tc-event .eo-event-date time {
+  color: white;
+  font-size: 1.3em;
+}

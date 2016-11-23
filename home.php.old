@@ -1,0 +1,60 @@
+<?php
+
+/*
+
+Template Name: SOS - home - template
+
+*/
+
+get_header(); ?>
+
+<style>
+
+
+
+</style>
+  </head>
+
+  <body>
+   </div> <!-- close rob from header -->
+
+
+
+
+<div class="" style="width:100%;background-color:black;">
+   <!-- djs notes -->
+Intro section<br> News/annoucements section 
+
+   <section class="row">
+      <div class="large-6 columns">
+        <img src="<?php bloginfo( 'template_directory'); ?>/img/Palomar-logo-grey.png" width="100%" alt="Palomar Chamber Jazz Ensemble logo"></img>
+        <?php if ( is_active_sidebar( 'home_desc_1' ) ) { ?>
+                  <div>
+                   <?php dynamic_sidebar( 'home_desc_1' ); ?>
+                  </div>
+              <?php } ?>
+        <br>
+      </div>
+      <div class="large-6 columns">
+        <img src="<?php bloginfo( 'template_directory'); ?>/img/IMG_6485-800w-noborder-black.jpg" width="100%" alt="Palomar Chamber Jazz Ensemble logo"></img>
+      </div>
+    </section>
+</div> 
+<section class="row">
+      <div class="large-8 columns ">
+        
+      </div>
+      
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<?php get_footer(); ?>

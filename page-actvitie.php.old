@@ -1,0 +1,62 @@
+<?php
+
+/*
+
+Template Name: SOS - Activies & Services - template
+
+*/
+
+get_header(); ?>
+
+
+<style>
+
+
+
+</style>
+  </head>
+
+  <body>
+</div> <!-- close rob from header -->
+<div  class="container" role="document">
+  <div id="content" role="main">
+   <div class="row"> 
+    <div class="large-12 columns">
+     <section class="" id="Activities-and-Services" >
+      <div class="">
+        <h2> Activities and Services </h2> 
+        <p> Activites and Services intro text - from widget area </p>
+       </div>
+      </section>
+
+      <section class="row activities-grid" id="outings-section"  >  
+         <h3>Outings and Special Events</h3>
+            <?php   set_query_var( $my_selected_category, 'outing-event' ); ?>
+            <div class="activities-grid" data-equalizer="">
+              <?php get_template_part('activities-grid-part');              ?>
+            </div>
+       </section>
+      <hr>
+
+      <section class="row activities-grid" id="Weekly-Activites-section">
+          <h3> Weekly activities </h3> 
+          <?php  set_query_var( $my_selected_category, 'weekly-activity' )  ?>
+          <div class="activities-grid" data-equalizer="">
+              <?php get_template_part('activities-grid-part'); ?>
+          </div>
+      </section>
+      <hr>
+
+       <section class="row activities-grid" id="services-section">
+          <h3> Services and Support </h3>
+          <?php set_query_var( $my_selected_category, 'support-event' ) ?>
+          <div class="activities-grid" data-equalizer="">
+              <?php get_template_part('activities-grid-part'); ?>
+          </div>
+       </section>
+    </div> <!-- row -->
+   </div> <!-- main 12 columns  -->
+  </div> <!-- content / main -->
+ </div> <!-- container -->
+
+<?php get_footer(); ?>

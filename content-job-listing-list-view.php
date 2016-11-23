@@ -1,0 +1,80 @@
+<?php
+/**
+ * The template for displaying job content in list view within loops.
+ *
+ * Override this template by copying it to yourtheme/simple_job_board/content-job-listing-list-view.php
+ *
+ * @author      PressTigers
+ * @package     Simple_Job_Board
+ * @subpackage  Simple_Job_Board/Templates
+ * @version     1.1.0
+ * @since       2.2.0
+ * @since       2.2.3  Added @hook sjb_job_listing_heading_after.
+ */
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+global $post;
+
+/**
+ * Fires before job listing on job listing page.
+ * 
+ * @since   2.2.0
+ */
+do_action('sjb_job_listing_list_view_before');
+?>
+
+<!-- Start Jobs List View 
+================================================== -->
+<article id="sjb_job-visiable" class="sjb-list-view">
+    <a href="<?php the_permalink(); ?>">
+      <div class="sjb-row">
+         
+         
+
+        <!-- Jobs List view header -->
+        <header class="sjb-col-md-6">
+            <div class="sjb-row">  
+               
+                 <div id="sjb-heading">
+                    <h4 id="sjb_job-heading" class="company-name">
+                        <?php
+                            /**
+                             * Template -> Title:
+                             * 
+                             * - Job Title
+                             */
+                            get_simple_job_board_template('listing/list-view/title.php');
+
+                           
+                            do_action('sjb_job_listing_heading_after'); ?>  
+                                                
+                    </h4>
+                </div> 
+             
+            </div>
+        </header>
+        <?php
+      
+        get_simple_job_board_template('listing/list-view/type.php');
+
+    
+        get_simple_job_board_template('listing/list-view/posted-date.php');?>
+     
+     </div>
+     </a>
+    <?php
+
+    get_simple_job_board_template('listing/list-view/short-description.php');
+    ?>
+</article>
+<!-- ==================================================
+End Jobs List View -->
+
+<?php
+/**
+ * Fires after job listing on job listing page.
+ * 
+ * @since   2.2.0
+ */
+do_action('sjb_job_listing_list_view_after');

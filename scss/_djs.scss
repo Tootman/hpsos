@@ -1,0 +1,502 @@
+$theme-green:  #2A8055; 
+$theme-blue:#2B5974;
+$highlight-green:#53AF81;
+$theme-brown:#998771;
+$panel-background: #f4f3f3;
+$theme-lightpurple:#E2D9DB;
+$theme-panel-grey:#f0f0f0;
+$link-blue: #0086b3; /* was #008CBA; */
+$theme-event-date-purple: #6c376c;
+$theme-panel-highlight: #d5f1c1;
+$theme-light-yellow:#efef94;
+
+
+$nav-font-size:1.0em;
+$normal-text-size:1.1em;
+
+#home-banner-head,
+nav.top-bar
+{
+    background-color: $theme-green;
+}
+
+#home-banner-head {
+	border-bottom-width: 1em;
+    border-bottom-style: solid;
+    border-bottom-color:$theme-green;
+}
+
+
+body > header.contain-to-grid{
+    margin-bottom: 0px;
+    background-color:$theme-green;
+}
+
+/* --------------------------------------- footer -------------------- */
+footer.full-width{
+  background-color:$theme-green;
+}
+
+footer .widget,
+footer .panel,
+footer .textwidget
+{
+  background:$theme-green;
+  color:white;
+  border:none;
+}
+
+footer h2,
+footer h3,
+footer h4,
+footer p{
+  color:white;
+}
+
+footer hr {
+    
+    border-top-color: $highlight-green;
+}
+
+
+#contact-footer .panel {
+    border-right: solid;
+    border-right-width: 1px;
+    border-color:$highlight-green;
+}
+
+ footer .panel {
+    padding-top:0px;
+    margin-bottom:0px;
+ }
+
+ 
+footer a img {
+    border: none;
+    margin: 0.5em;
+    background-color:white;
+    padding:0.5em;
+    max-height:60px;
+}
+
+
+/* ------------------------- top bar ------------------------------*/
+.top-bar.menu-item{
+	background-color:$theme-green;
+}
+
+.top-bar-section li a:not(.button) {
+    background: $theme-green !important;   
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: $highlight-green !important;   
+}
+
+.top-bar-section ul li.active > a {
+    background: $highlight-green !important;   
+}
+
+/* menu seperators */
+@media only screen and (min-width: 40.063em){
+  .divider {
+      border:none!important;
+  }
+}
+
+h1,h2,h3,h4{
+font-family:Kalam,sans-serif;
+
+}
+
+img.custom-logo {
+    width: 11em;
+    position:relative;
+    top:2em;
+    z-index:2;
+}
+/* ------------------------fontawsome ----------------------------------------------------------- */
+@font-face {
+  font-family: '[set]Foundicons';
+  src: url('fonts/[set]_foundicons.eot');
+  src: url('fonts/[set]_foundicons.eot?#iefix') format('embedded-opentype'),
+       url('fonts/[set]_foundicons.woff') format('woff'),
+       url('fonts/[set]_foundicons.ttf') format('truetype'),
+       url('fonts/[set]_foundicons.svg#[set]Foundicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+ 
+[class*="foundicon-"]:before {
+  font-family: "[set]Foundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+
+/* ------------------------------------------ */
+
+
+#search-section{
+  margin-top:3em;
+ 
+}
+
+a#header-search-button {
+  padding:0.48em;
+  background-color:$theme-brown;
+
+}
+
+#social-section a {
+  font-size:3em;
+  color:white;
+  margin-right:0.2em;
+
+}
+
+#social-section {
+  
+  padding-top:0.9em;
+}
+
+input#searchsubmit{
+  background-color:$highlight-green;
+}
+
+/*  ------------------ simple jobs board plugin --------------- */
+
+
+/*
+.sjb-row{
+  padding-left:1em;
+  background-color:$theme-green;
+  border-left-style:solid;
+  border-left-width:0.5em;
+  border-left-color:$highlight-green;
+}
+*/
+
+article#sjb_job-visiable{
+  padding-left:1em; 
+  background-color:$theme-brown;
+  border-style:solid;
+  border-width:1px;
+  border-color:$highlight-green;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.sjb-wrap #sjb_job-heading,
+.sjb-wrap #sjb-job-heading{
+  color:white!important;
+font-size:1.5em!important;
+}
+
+
+.panel {
+  background:white;
+  text-align: center;
+  border-style:none;
+}
+
+.welcome-section,
+.welcome-section .panel
+                  {
+  background-color:$theme-panel-highlight;
+}
+
+.activities-grid .panel{
+  /*
+  padding-left:0px;
+  padding-right:0px;
+  height: 25em;*/
+}
+
+
+.activities-grid .panel img{
+  max-height: 15em;
+}
+
+.grid-card-container#content {
+    background-color: $theme-panel-grey;
+}
+
+.activities-grid .panel:hover,
+.announcements-section .panel:hover {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.news-section {h2,h3,h4 {
+  text-align:left;
+  margin-bottom:0.1em;
+    }
+ }
+
+.news-posted-date{
+  text-align:left;
+  color:$theme-brown;
+  font-style:italic;
+  margin-bottom:1em;
+}
+
+.news-section img {
+    margin-top: 1em;
+}
+
+#content.news-container{
+  background-color:$theme-panel-grey;
+}
+
+
+
+.button.small {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+footer .panel img {
+  margin-bottom:0.5em;
+}
+
+footer .fa.fa-twitter-square,
+footer .fa.fa-facebook-official,
+
+ {
+    color:white;
+    padding: 0.2em;
+}
+
+footer .fa.fa-twitter-square:hover,
+footer .fa.fa-facebook-official:hover,
+footer.full-width a:hover
+ {
+
+    color:$theme-light-yellow;
+}
+
+.footer-email a{
+  text-decoration:none;
+}
+
+
+footer.full-width {
+  padding-top:0px;
+
+}
+
+footer.full-width a{
+  color:white;
+  margin-top:1em;
+}
+footer.full-width a:hover{
+  font-weight:bolder;
+}
+
+.full-width.footer-widget{
+  margin-top: 0px;
+  padding-top: 0px;
+
+}
+
+#contact-footer .widget {
+    text-align: left;
+}
+
+.footer-subheading{
+  font-size:1.5em;
+}
+
+
+footer .textwidget{ h4,h3,p {
+  color:white;
+  }
+}
+
+footer { h4,h3 {
+  text-align:center;
+  }
+}
+
+
+
+/* hide comments closed  - workaround */
+.notice{
+  display:none;
+}
+
+#sidebar .panel h4 {
+  color:$theme-blue;
+  
+}
+
+/* grid item card display - occurance field */
+.mycard-occurance {
+ 
+margin-bottom:0.5em;
+color:white;
+background-color:$theme-event-date-purple;
+padding-top:0.5em;
+padding-bottom:0.5em;
+}
+
+.mycard-button{
+  margin-top:0.6em;
+}
+
+.mycard-image:hover{
+  opacity:0.8;
+}
+
+.header-contact-phone {
+  color:white;
+}
+
+
+/* ----------------------- font sizes ------------------ */
+.top-bar-section ul li > a{
+  font-size:$nav-font-size;
+}
+
+.container p,
+.container li {
+  font-size:$normal-text-size;
+}
+
+.container li{
+  line-height:1.5;
+  margin-bottom:1em;
+}
+
+blockquote{
+  background-color:$theme-panel-grey;
+  margin-bottom:1em;
+  margin-top:1em;
+  padding-top:1em;
+  padding-bottom:1em;
+  text-align:center;
+}
+
+blockquote:before{
+  
+}
+
+cite{
+   font-style:italic;
+  float:right;
+}
+
+.sjb-wrap #sjb_job-bolits{
+  color:red!important;
+}
+
+.widget_sp_image-description{
+  font-size:0.7em;
+}
+
+.welcome-section h2,
+.welcome-section h3,
+{
+  text-align:left;
+}
+
+.panel a
+  {h1,h2,h3,h4 
+    {
+    color: $link-blue;
+  }
+}
+
+.panel a:hover
+  {h1,h2,h3,h4 
+    {
+    
+  }
+}
+
+/* ------------------------------------------- side bar ----------------------- */
+#sidebar .panel{
+  background-color:$theme-green;
+}
+
+#sidebar .panel a{
+  color:white;
+}
+
+#sidebar .panel a:hover,
+{
+  color:white;
+}
+
+.panel {
+    padding-bottom: 0px;
+}
+
+.entry-content .panel,
+#content .panel {
+    border-radius: 1em;
+}
+
+
+#sidebar .panel li:hover{
+  background-color:$highlight-green;
+}
+
+#sidebar .panel li:active{
+  background-color:$highlight-green;
+  color:white
+}
+
+#sidebar .panel h4{
+    color: white;
+    font-weight: normal;
+    font-size: larger;
+}
+
+.textwidget li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 40.063em){
+   .container .medium-block-grid-3 li {
+   width:100%;
+   
+  }
+}
+
+@media only screen and (min-width: 64.063em){
+#sidebar {
+    margin-top: 1em;
+  }
+}
+
+article  .author,
+article time.updated {
+    
+display: none;
+}
+
+.eo-tc-event .eo-event-date{
+  background-color:$theme-event-date-purple;
+  padding:0.5em
+}
+
+
+.eo-tc-event .eo-event-date time {
+  color:white;
+  font-size:1.3em;
+}
+

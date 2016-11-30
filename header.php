@@ -12,6 +12,7 @@
 
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width" />
+	<meta name="google-site-verification" content="a9YOQPvi7kZSKhat9OSeBPRd7XXG5m_Z6CzsYUh8lKA" />
 
 	<!-- Favicon and Feed -->
 	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">

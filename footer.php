@@ -10,14 +10,14 @@
 <footer class="full-width" role="contentinfo">
 	<div class="row">
 		
-		<div class="large-4 columns" id="contact-footer">
+		<div class="large-6 columns" id="contact-footer">
 			 <h3>Contact</h3>
 			 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Contact (middle footer)')) : ?>
             
 <?php endif; ?>
 
 		</div>
-		<div class="large-8 columns" id="sponsors-footer">
+		<div class="large-6 columns" id="sponsors-footer">
 			<h3>Supporters</h3>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sponsors (right Footer)')) : ?>
             

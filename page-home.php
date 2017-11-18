@@ -31,7 +31,7 @@ get_header(); ?>
        <section class="row" >
        
            
-            <div class="large-9 columns panel large-centered welcome-section">
+            <div class="large-6 columns panel  welcome-section">
                <!-- welcome message widget -->
                <h2>Welcome</h2>
                   <div class="row">
@@ -39,7 +39,7 @@ get_header(); ?>
                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Welcome Section')) : ?>
                       [ do default stuff if no widgets ]
                       <?php endif; ?>
-                       <a href="#" class="button">Join us</a>
+                       <a href="index.php/contact" class="button">Join us</a>
                     </div>
                     <div class="columns large-4">
                       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Organiser Thumbnail')) : ?>
@@ -49,6 +49,13 @@ get_header(); ?>
                   </div>
               
             </div>
+             <div class="large-6 columns ">
+              <div class="flex-video">
+               <iframe width="560" height="315" max-width="560" src="https://www.youtube.com/embed/aKHuZiZ87Yo" frameborder="0" allowfullscreen></iframe>
+             </div>
+             </div>
+
+
           
         </section>
 

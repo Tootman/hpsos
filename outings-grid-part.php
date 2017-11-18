@@ -44,5 +44,7 @@
                     echo '</div></li>';
 
                endforeach;
+            else:
+              echo "Coming soon - watch this space!";
             endif;
 ?>

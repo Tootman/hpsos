@@ -506,12 +506,16 @@ input#searchsubmit {
 */
 article#sjb_job-visiable {
   padding-left: 1em;
-  background-color: #998771;
+  background-color: #777777;
   border-style: solid;
   border-width: 1px;
   border-color: #53AF81;
   margin-bottom: 1em;
   padding: 0.5em;
+}
+
+article#sjb_job-visiable:hover {
+  background-color: #53AF81;
 }
 
 .sjb-wrap #sjb_job-heading,
@@ -520,9 +524,14 @@ article#sjb_job-visiable {
   font-size: 1.5em !important;
 }
 
+.sjb-wrap #sjb_job-bolits {
+  color: white !important;
+}
+
+/* --------------------------------------*/
 .panel {
   background: white;
-  text-align: center;
+  text-align: left;
   border-style: none;
 }
 
@@ -539,7 +548,7 @@ article#sjb_job-visiable {
 }
 
 .activities-grid .panel img {
-  max-height: 15em;
+  /*max-height: 15em; */
 }
 
 .grid-card-container#content {
@@ -647,6 +656,8 @@ footer h4, footer h3 {
   background-color: #6c376c;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .mycard-button {
@@ -690,10 +701,6 @@ cite {
   float: right;
 }
 
-.sjb-wrap #sjb_job-bolits {
-  color: red !important;
-}
-
 .widget_sp_image-description {
   font-size: 0.7em;
 }
@@ -722,6 +729,8 @@ cite {
 
 .panel {
   padding-bottom: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .entry-content .panel,

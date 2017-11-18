@@ -220,7 +220,7 @@ font-size:1.5em!important;
 
 .panel {
   background:white;
-  text-align: left;
+  text-align: center;
   border-style:none;
 }
 
@@ -239,7 +239,7 @@ font-size:1.5em!important;
 
 
 .activities-grid .panel img{
-  /*max-height: 15em; */
+  max-height: 15em;
 }
 
 .grid-card-container#content {
@@ -363,8 +363,6 @@ color:white;
 background-color:$theme-event-date-purple;
 padding-top:0.5em;
 padding-bottom:0.5em;
-padding-left: 1em;
-padding-right: 1em;
 }
 
 .mycard-button{
@@ -455,8 +453,6 @@ cite{
 
 .panel {
     padding-bottom: 0px;
-    padding-left:1em;
-    padding-right:1em;
 }
 
 .entry-content .panel,

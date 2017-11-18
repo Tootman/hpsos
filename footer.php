@@ -31,7 +31,7 @@
 			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> </p>
 		</div>
 		<div class="large-4 columns">
-			<p>Registered charity 1136675 </p>
+			<p>Registered charity 1136675 <br> Company number 7001262</p>
 		</div>
 		<div class="large-4 columns">
 			<p>Website designed by <a href="#" title="Link to DanielJSimmons.uk Website"> Danieljsimmons.uk<a/> </p>

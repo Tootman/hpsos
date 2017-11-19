@@ -44,13 +44,13 @@
 	<!-- Starting the Top-Bar -->
 
   	<div class="row">
-		<div class="columns large-4  text-center" id="logo-section">
+		<div class="columns medium-4  text-center" id="logo-section">
 			<?php the_custom_logo(); ?>
 		</div>
-		<div class="columns large-4 header-donate-section">
-			<a class="button" target="_blank" href="https://www.giveasyoulive.com/donate?cid=85381">Donate now</a>
+		<div class="columns medium-4 header-donate-section">
+			<a class="button" title="Make a donation to SOS" target="_blank" href="https://www.giveasyoulive.com/donate?cid=85381">Donate now</a>
 		</div>
-		<div class="columns large-3" id="search-section">
+		<div class="columns medium-3" id="search-section">
 			<?php get_search_form(); ?>
 
 		</div>

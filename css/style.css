@@ -437,16 +437,25 @@ h1, h2, h3, h4 {
   font-family: Kalam,sans-serif;
 }
 
-img.custom-logo {
-  width: 11em;
-  position: relative;
-  top: 2em;
-  z-index: 2;
+@media screen and (min-width: 768px) {
+  img.custom-logo {
+    width: 11em;
+    position: relative;
+    top: 0.5em;
+    z-index: 2;
+  }
 }
-
+@media screen and (max-width: 767px) {
+  img.custom-logo {
+    width: 8em;
+    position: relative;
+    top: 0.2em;
+    z-index: 2;
+  }
+}
 .header-donate-section {
-  margin-top: 3em;
-  text-align: right;
+  margin-top: 0.5em;
+  text-align: center;
 }
 .header-donate-section a.button {
   background-color: Gainsboro;
@@ -496,7 +505,8 @@ img.custom-logo {
 
 /* ------------------------------------------ */
 #search-section {
-  margin-top: 3em;
+  /* margin-top:3em; */
+  margin-top: 0.5em;
 }
 
 a#header-search-button {

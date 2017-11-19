@@ -81,7 +81,7 @@ footer a img {
 }
 
 
-/* ------------------------- top bar ------------------------------*/
+/* ------------------------- top bar & header ------------------------------*/
 .top-bar.menu-item{
 	background-color:$theme-green;
 }
@@ -116,6 +116,34 @@ img.custom-logo {
     top:2em;
     z-index:2;
 }
+
+.header-donate-section{
+  margin-top: 3em;
+  text-align:right;
+    a.button {
+      background-color: Gainsboro  ;
+      color: BlueViolet ;
+      border-radius: 5px;
+      font-weight:bold;
+      padding: 0.4em 1em;
+    }
+    a.button:hover{
+      background-color:white;
+    }
+
+}
+
+/*
+.header-donate-section a.button {
+    background-color: white;
+    color: BlueViolet ;
+    border-radius: 5px;
+    font-weight:bold;
+    padding: 0.4em 1em;
+}
+*/
+
+
 /* ------------------------fontawsome ----------------------------------------------------------- */
 @font-face {
   font-family: '[set]Foundicons';
@@ -176,6 +204,7 @@ a#header-search-button {
 input#searchsubmit{
   background-color:$highlight-green;
 }
+
 
 /*  ------------------ simple jobs board plugin --------------- */
 
@@ -373,10 +402,6 @@ padding-right: 1em;
 
 .mycard-image:hover{
   opacity:0.8;
-}
-
-.header-contact-phone {
-  color:white;
 }
 
 

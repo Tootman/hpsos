@@ -240,5 +240,15 @@ function my_mce_before_init_insert_formats( $init_array ) {
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' ); 
 
 
+function my_custom_mime_types( $mimes ) {
+ 
+// New allowed mime types.
+$mimes['svg'] = 'image/svg+xml';
+ 
+return $mimes;
+}
+add_filter( 'upload_mimes', 'my_custom_mime_types' );
+
+
 
 ?>

@@ -47,8 +47,15 @@
 		<div class="columns medium-4  text-center" id="logo-section">
 			<?php the_custom_logo(); ?>
 		</div>
-		<div class="columns medium-4 header-donate-section">
+		<div class="columns medium-2 header-donate-section">
 			<a class="button" title="Make a donation to SOS" target="_blank" href="https://www.giveasyoulive.com/donate?cid=85381">Donate now</a>
+		</div>
+		<div class="columns medium-2 header-widget-section">
+			<?php if ( is_active_sidebar( 'top_bar_widget' ) ) : ?>
+				<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+				<?php dynamic_sidebar( 'top_bar_widget' ); ?>
+				</div><!-- #primary-sidebar -->
+			<?php endif; ?>
 		</div>
 		<div class="columns medium-3" id="search-section">
 			<?php get_search_form(); ?>
